@@ -2,6 +2,8 @@
 import streamlit as st
 import joblib
 
+st.title("🔍 Mental Health Sentiment App")
+
 # Load model dan vectorizer
 svm_model = joblib.load("model/svm_model.pkl")
 xgb_model = joblib.load("model/xgb_model.pkl")
